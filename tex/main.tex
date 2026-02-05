@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+
+% --- Packages ---
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage[hidelinks]{hyperref}
+\usepackage{authblk}
+\usepackage{abstract}
+\usepackage{placeins}
+
+
+\usepackage[
+  backend=biber,
+  style=nature,
+  sorting=none,
+  giveninits=true
+]{biblatex}
+\addbibresource{refs.bib}
+
+\input{macros.tex}
+
+\begin{document}
+
+\input{sections/00_title}
+\maketitle
+
+\input{sections/01_maintext}
+
+\input{sections/03_acknowledgements}
+
+\input{sections/04_declaration_of_interests}
+
+\input{sections/05_contributions}
+
+\section*{Bibliography}
+\printbibliography
+
+\section*{Figures}
+\input{sections/02_figure_caption}
+
+\newpage
+\section*{Online Methods}
+\input{sections/06_online_methods}
+
+\input{sections/06_supplementary_figures}
+
+\input{sections/07_supplementary_table_1}
+
+\section*{Supplementary Notes}
+
+
+\end{document}
