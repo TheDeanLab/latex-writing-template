@@ -1,4 +1,4 @@
-# LaTeX Writing Template (Correspondence / Short-Form Articles)
+# LaTeX Writing Template
 
 This repository serves as a **reusable LaTeX template** for short-form scientific writing,
 including **Nature Biomedical Engineering Correspondences**, brief perspectives, and
