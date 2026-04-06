@@ -9,9 +9,9 @@
 \usepackage{tikz-cd}
 \usepackage{microtype}
 \usepackage{url}
+\usepackage{longtable}
 \usepackage{authblk}
 \usepackage[hidelinks]{hyperref}
-\usepackage{authblk}
 \usepackage{abstract}
 \usepackage{placeins}
 
@@ -23,8 +23,6 @@
   giveninits=true
 ]{biblatex}
 \addbibresource{refs.bib}
-
-\input{macros.tex}
 
 \input{macros.tex}
 
@@ -41,21 +39,34 @@
 
 \input{sections/05_contributions}
 
-\section*{Bibliography}
 \printbibliography
 
+\clearpage
 \section*{Figures}
 \input{sections/02_figure_caption}
+\FloatBarrier
 
-\newpage
+\clearpage
 \section*{Online Methods}
 \input{sections/06_online_methods}
+\FloatBarrier
 
+\clearpage
+\section*{Supplementary Figures}
 \input{sections/06_supplementary_figures}
+\FloatBarrier
 
+\clearpage
+\section*{Supplementary Tables}
 \input{sections/07_supplementary_table_1}
+\FloatBarrier
 
+\clearpage
+\section*{Supplementary Notes}
 \input{sections/08_supplementary_notes}
+\FloatBarrier
+
+\clearpage
 
 
 \end{document}

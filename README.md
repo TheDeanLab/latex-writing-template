@@ -53,8 +53,14 @@ project/
       01_maintext.tex
       02_figure_caption.tex
       03_acknowledgements.tex
+      04_declaration_of_interests.tex
+      05_contributions.tex
+      06_online_methods.tex
       06_supplementary_figures.tex
+      07_supplementary_table_1.tex
+      08_supplementary_notes.tex
   figures/                   # Figures (use Git LFS if large)
+    supp_figures/            # Optional supplementary figures
   build/                     # Auto-generated PDF and aux files
   Makefile
   .gitignore
@@ -111,10 +117,23 @@ Remove TODOs before submission.
 ## Figures
 
 - Only **one main figure** is allowed for Correspondence articles.
+- Main figures typically live in `figures/`.
 - Supplementary figures (if permitted) are grouped in
   `06_supplementary_figures.tex`.
+- Store supplementary figure assets under `figures/supp_figures/`
+  to keep them separate from the main display item.
 - Supplementary figures are automatically numbered **S1, S2, ...**
   using helper macros defined in `macros.tex`.
+
+## Supplementary Material
+
+- `main.tex` uses explicit page breaks and float barriers between
+  figures, methods, supplementary figures, supplementary tables, and
+  supplementary notes to keep ordering stable.
+- The supplementary table scaffold uses `longtable`, so long parts
+  lists can span multiple pages cleanly.
+- Supplementary notes use unnumbered section headings while preserving
+  cross-reference labels through helper macros in `macros.tex`.
 
 ---
 
